@@ -1,6 +1,9 @@
 //accepts a number of milliseconds (float value included), and converts it to other formats
-    //returns array() of formatted times
-    public function reconfigure_time($milliseconds){
+
+//returns array() of formatted times
+
+    public function reconfigureTime($milliseconds = 60000)
+    {
         $original_milliseconds = $milliseconds;
         $seconds = floor($milliseconds / 1000);
         $minutes = floor($seconds / 60);
